@@ -20,7 +20,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-
+}
 /* ----- AUTOPREFIXER FOR VS CODE WAS USED FOR VENDOR PREFIXES ----- */
 /* ---------- VARIABLES ---------- */
 :root{
@@ -119,16 +119,11 @@ footer .icon{
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
    @media (prefers-reduced-motion: reduce) {
-    @-webkit-keyframes icon-animation {
-        0% { font-variation-settings: "TIME" 1; 
-            animation: none;
-        }
-        
-    }
-    @keyframes icon-animation {
-        0% { font-variation-settings: "TIME" 1; 
-        animation: none;}
-    }
+   .icon {
+    -webkit-animation: none !important; 
+    animation: none !important;
+
+   }
 }
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
@@ -371,5 +366,5 @@ img{
     #three p, #four p, #five p, #six p{
         padding-top: 2em;
     }
-}}
+}
 /* --------------- END EXTRA LARGE SCREEN SIZES --------------- */
